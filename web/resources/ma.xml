@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Map>
+    <Rooms id="1" maze="no" containLight="yes" dark="no">
+        <Walls direction="North" type="painting" key="key1" nextRoom="0">
+                <Items>
+                    <name>k1</name>
+                    <type>key</type>
+                    <price>5</price>
+                </Items>
+        </Walls>
+
+        <Walls direction="West" type="mirror" key="key2" nextRoom="0">
+                <Items>
+                    <name>k5</name>
+                    <type>key</type>
+                    <price>7</price>
+                </Items>
+        </Walls>
+
+        <Walls direction="East" key="" type="door" nextRoom="2">
+            
+        </Walls>
+
+        <Walls direction="South" type="empty" nextRoom="0" key="">
+            
+        </Walls>
+    </Rooms>
+
+    <Rooms id="2" maze="yes" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+                <Items>
+                    <name>flashlight</name>
+                    <type>flashlight</type>
+                    <price>2</price>
+                </Items>
+                <Items>
+                    <name>k2</name>
+                    <type>key</type>
+                    <price>9</price>
+                </Items>
+                <Items>
+                    <name>Gold</name>
+                    <type>Gold</type>
+                    <price>6</price>
+                </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+                <Items>
+                    <name>flashlight</name>
+                    <type>flashlight</type>
+                    <price>12</price>
+                </Items>
+                <Items>
+                    <name>honda</name>
+                    <type>key</type>
+                    <price>7</price>
+                </Items>
+                <Items>
+                    <name>c3</name>
+                    <type>key</type>
+                    <price>6</price>
+                </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+
+
+    <Rooms id="2" maze="no" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>2</price>
+            </Items>
+            <Items>
+                <name>k2</name>
+                <type>key</type>
+                <price>9</price>
+            </Items>
+            <Items>
+                <name>Gold</name>
+                <type>Gold</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>12</price>
+            </Items>
+            <Items>
+                <name>honda</name>
+                <type>key</type>
+                <price>7</price>
+            </Items>
+            <Items>
+                <name>c3</name>
+                <type>key</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+
+
+    <Rooms id="2" maze="no" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>2</price>
+            </Items>
+            <Items>
+                <name>k2</name>
+                <type>key</type>
+                <price>9</price>
+            </Items>
+            <Items>
+                <name>Gold</name>
+                <type>Gold</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>12</price>
+            </Items>
+            <Items>
+                <name>honda</name>
+                <type>key</type>
+                <price>7</price>
+            </Items>
+            <Items>
+                <name>c3</name>
+                <type>key</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+
+    <Rooms id="2" maze="no" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>2</price>
+            </Items>
+            <Items>
+                <name>k2</name>
+                <type>key</type>
+                <price>9</price>
+            </Items>
+            <Items>
+                <name>Gold</name>
+                <type>Gold</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>12</price>
+            </Items>
+            <Items>
+                <name>honda</name>
+                <type>key</type>
+                <price>7</price>
+            </Items>
+            <Items>
+                <name>c3</name>
+                <type>key</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+
+    <Rooms id="2" maze="no" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>2</price>
+            </Items>
+            <Items>
+                <name>k2</name>
+                <type>key</type>
+                <price>9</price>
+            </Items>
+            <Items>
+                <name>Gold</name>
+                <type>Gold</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>12</price>
+            </Items>
+            <Items>
+                <name>honda</name>
+                <type>key</type>
+                <price>7</price>
+            </Items>
+            <Items>
+                <name>c3</name>
+                <type>key</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+    <Rooms id="2" maze="no" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>2</price>
+            </Items>
+            <Items>
+                <name>k2</name>
+                <type>key</type>
+                <price>9</price>
+            </Items>
+            <Items>
+                <name>Gold</name>
+                <type>Gold</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>12</price>
+            </Items>
+            <Items>
+                <name>honda</name>
+                <type>key</type>
+                <price>7</price>
+            </Items>
+            <Items>
+                <name>c3</name>
+                <type>key</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+    <Rooms id="2" maze="no" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>2</price>
+            </Items>
+            <Items>
+                <name>k2</name>
+                <type>key</type>
+                <price>9</price>
+            </Items>
+            <Items>
+                <name>Gold</name>
+                <type>Gold</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>12</price>
+            </Items>
+            <Items>
+                <name>honda</name>
+                <type>key</type>
+                <price>7</price>
+            </Items>
+            <Items>
+                <name>c3</name>
+                <type>key</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+    <Rooms id="2" maze="no" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>2</price>
+            </Items>
+            <Items>
+                <name>k2</name>
+                <type>key</type>
+                <price>9</price>
+            </Items>
+            <Items>
+                <name>Gold</name>
+                <type>Gold</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>12</price>
+            </Items>
+            <Items>
+                <name>honda</name>
+                <type>key</type>
+                <price>7</price>
+            </Items>
+            <Items>
+                <name>c3</name>
+                <type>key</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+    <Rooms id="2" maze="no" containLight="no" dark="yes">
+
+        <Walls  direction="North" type="chest" key="key1" nextRoom="0">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>2</price>
+            </Items>
+            <Items>
+                <name>k2</name>
+                <type>key</type>
+                <price>9</price>
+            </Items>
+            <Items>
+                <name>Gold</name>
+                <type>Gold</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="seller" direction="West" nextRoom="0" key="">
+            <Items>
+                <name>flashlight</name>
+                <type>flashlight</type>
+                <price>12</price>
+            </Items>
+            <Items>
+                <name>honda</name>
+                <type>key</type>
+                <price>7</price>
+            </Items>
+            <Items>
+                <name>c3</name>
+                <type>key</type>
+                <price>6</price>
+            </Items>
+        </Walls>
+        <Walls type="door" direction="East" nextRoom="1" key="k2">
+
+        </Walls>
+
+        <Walls type="empty" direction="South" nextRoom="3" key="">
+
+        </Walls>
+    </Rooms>
+
+</Map>
