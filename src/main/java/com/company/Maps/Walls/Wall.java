@@ -33,17 +33,5 @@ public abstract class Wall {
   public int hashCode() {
     return Objects.hash(objectInWall);
   }
-  //  public void useKeyTo_Lock_Unlock(String key) {
-//    if (lockable.isLocked()) lockable.unlock(key);
-//    else lockable.makeLocked(key);
-//  }
 
-//  @Override
-//  public String toString() {
-//    return "Wall{" +
-//            "passable=" + passableBehavior.toString() +
-//            ", tradeable=" + tradeable.toString() +
-//            ", lockable=" + lockable.toString() +
-//            '}';
-//  }
 }

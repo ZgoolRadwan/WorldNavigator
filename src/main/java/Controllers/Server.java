@@ -15,7 +15,6 @@ public class Server {
         if (firstInstance == null) firstInstance = new Server();
         return firstInstance;
     }
-
     private Server() {
         games=new ArrayList<>();
     }
@@ -30,15 +29,6 @@ public class Server {
         game.setStartGameAtTime(minutes);
         games.add(game);
     }
-
-    public static Server getFirstInstance() {
-        return firstInstance;
-    }
-
-    public static void setFirstInstance(Server firstInstance) {
-        Server.firstInstance = firstInstance;
-    }
-
     public ConfigurationGame getGameById(int id)
     {
         for (ConfigurationGame game:games) {

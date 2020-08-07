@@ -161,7 +161,7 @@ public class PlayerAction {
             server.getGameById(gameID).setGameActive(true);
 
             if(server.getGameById(gameID).getPlayers().size()==1){
-                server.getGameById(gameID).stopGameAfterTime(1);
+                server.getGameById(gameID).stopGameAfterTime(8);
                 server.getGameById(gameID).start();
             }
 
@@ -330,6 +330,7 @@ public class PlayerAction {
 
     public void setTradeModeStarted(boolean tradeModeStarted) {
         this.tradeModeStarted = tradeModeStarted;
+
     }
 
 
@@ -488,7 +489,7 @@ public class PlayerAction {
 
     public boolean renderGameForm()
     {
-        return !isFightModeActive() && isPlayerAllowedToPlay();
+        return !isFightModeActive() && isPlayerAllowedToPlay()&&!tradeModeStarted;
     }
 
     public boolean isGameActive()
@@ -509,5 +510,13 @@ public class PlayerAction {
     public boolean isPlayerTryToPlayBeforeGameStarted()
     {
         return (System.currentTimeMillis()<server.getGameById(gameID).getStartGameAtTime());
+    }
+
+    public int currentRoomID()
+    {
+        if(isGameActive()) {
+        return server.getGameById(gameID).getPlayerByName(playerName).getPlayerStatus().getCurrentRoom().getRoomId();
+        }
+        return 0;
     }
 }

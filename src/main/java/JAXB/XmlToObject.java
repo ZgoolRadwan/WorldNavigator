@@ -3,7 +3,7 @@ import JAXB.POJOClases.Map;
 import com.company.Items.Key;
 import com.company.Maps.Room;
 import com.company.Maps.Walls.Wall;
-import com.company.Maps.Walls.WallFactory.WallFactory;
+
 import com.company.Maps.Walls.WallHasDoor;
 import com.company.ObjectsForWalls.Door;
 import org.w3c.dom.Element;

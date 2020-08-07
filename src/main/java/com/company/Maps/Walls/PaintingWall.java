@@ -18,16 +18,6 @@ public class PaintingWall extends Wall {
   }
 
 
-//  @Override // override to show key
-//  public void useKeyTo_Lock_Unlock(String key) {
-//    if (isKeyHidden) {
-//      if (paintingPassword != null)
-//        if (key.equals(paintingPassword)) {
-//          isKeyHidden = false;
-//          System.out.println("key founded, check it");
-//        }
-//    }
-//  }
 
 
 }

@@ -15,13 +15,4 @@ public class WallHasSeller extends Wall {
     objectInWall=seller;
   }
 
-
-//  @Override
-//  public String toString() {
-//    return "Wall with Seller{" +
-//            "seller Items=" + sellerItems +
-//            '}';
-//  }
-
-
 }

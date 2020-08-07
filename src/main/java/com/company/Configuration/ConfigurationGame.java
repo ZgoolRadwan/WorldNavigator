@@ -19,6 +19,7 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -69,6 +70,14 @@ public class ConfigurationGame extends Thread{
 
     Flash flash=new Flash();
     playerBag.add(flash);
+    //make player in random room - random range: 1 and 24  //
+   /* Random rand = new Random();
+
+    int randomNumRoom = ((int) (Math.random()*(24 - 1))) + 1;
+
+    while(getRoomById(randomNumRoom).getPlayersCount()>0)
+      randomNumRoom=((int) (Math.random()*(24 - 1))) + 1;
+*/
     MazePlayer mazePlayer=new MazePlayer.PlayerBuilder(Direction.NORTH,name,getRoomById(1))
             .setPlayerBag(playerBag).setPlayerGolds(52).build();
     mazePlayer.setGameId(gameId);

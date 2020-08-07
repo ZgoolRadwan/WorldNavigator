@@ -19,23 +19,23 @@ import java.util.HashMap;
 public class WallFactoryPojo {
 
 
-   public static Wall createWall(String wallType, JAXB.POJOClases.Wall wall)
+   public static Wall createWall(String wallType, JAXB.POJOClases.Wall wallFromPojoObject)
    {
        switch (wallType) {
            case "chest":
-               return createChestWall(wall);
+               return createChestWall(wallFromPojoObject);
            case "seller":
-               return createSellerWall(wall);
+               return createSellerWall(wallFromPojoObject);
            case "empty":
                return new EmptyWall();
            case "painting":
-               return createPaintingWall(wall);
+               return createPaintingWall(wallFromPojoObject);
            case "mirror":
-               return createMirrorWall(wall);
-           case "door":
-               return new EmptyWall(); // door will be initialized after rooms
+               return createMirrorWall(wallFromPojoObject);
+           default:
+               return new EmptyWall();// door will be initialized after rooms
        }
-       throw new NullPointerException("Wall missed tags in XML File");
+
    }
 
     private static Wall createPaintingWall(JAXB.POJOClases.Wall wall) {
@@ -81,6 +81,9 @@ public class WallFactoryPojo {
         mirrorWall.setObjectType(mirrorObject);
         return mirrorWall;
     }
+
+
+
 
     private static Wall createChestWall(JAXB.POJOClases.Wall wall) {
 
