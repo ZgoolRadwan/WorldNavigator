@@ -14,12 +14,11 @@
 <h:body styleClass="body" >
 
     <div style="text-align: center;color: red" >
-        <p>Number of players:</p>
-        <h:outputLabel value="#{player.numberOfPlayers}"></h:outputLabel>
         <br></br>
         <p>Number of games:</p>
-        <h:outputLabel value="#{player.getNumberOfGames()}"></h:outputLabel>
         <h3><h:outputLabel value="#{player.action}" style="color: red;text-align:center"/></h3>
+        <br></br>
+        <h:outputLabel value="#{player.getNumberOfGames()}"></h:outputLabel>
     </div>
     <h:form styleClass="form" id="myForm">
         <br></br><br></br>
@@ -33,6 +32,7 @@
         <div style="text-align: center">
         <h:commandButton value="Play" action="#{player.play()}" type="submit" styleClass="btn_green"/>
         <h:commandButton value="Create new game" action="#{player.addNewGame}" type="submit" styleClass="btn_blue" />
+            <h:commandButton value="Clear games" action="#{player.removeGamePage()}" type="submit" styleClass="cancel_btn" />
         </div>
         <br></br><br></br>
     </h:form>

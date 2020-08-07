@@ -35,6 +35,14 @@ public class ConfigurationGame extends Thread{
   private long startGameAtTime;
 
 
+  public void clearPlayerByName(String playerName)
+  {
+    for(int i=0;i<players.size();i++)
+      if(players.get(i).getPlayerName().equals(playerName)){
+        players.remove(i);
+        break;
+      }
+  }
 
   public int getGameId() {
     return gameId;

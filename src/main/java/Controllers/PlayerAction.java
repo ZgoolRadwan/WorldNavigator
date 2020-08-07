@@ -33,6 +33,15 @@ public class PlayerAction {
     private int newGameId;
     private ArrayList<Integer>gameList;
     private int minutesToStartGameAfter;
+    private int gameIdToRemove;
+
+    public int getGameIdToRemove() {
+        return gameIdToRemove;
+    }
+
+    public void setGameIdToRemove(int gameIdToRemove) {
+        this.gameIdToRemove = gameIdToRemove;
+    }
 
     public int getMinutesToStartGameAfter() {
         return minutesToStartGameAfter;
@@ -142,33 +151,44 @@ public class PlayerAction {
 
     public String play()
     {
-
-        if(isPlayerTryToPlayAfterGameStartedPlusOneMinute()){
-            action="Game is already started, started before more than one minute";
-            return action;
-        }
-        else if(isPlayerTryToPlayBeforeGameStarted())
+        if(server.getGames().size()!=0)
         {
-            action="The Game not started yet, wait few minutes";
-            return action;
-        }
-        else
-        {
-            server.getGameById(gameID).addPlayer(playerName,gameID);
-            //server.getGameById(gameID).addPlayer(playerName,gameID);
-            server.getGameById(gameID).getPlayerByName(playerName).setAllowedToPlayGame(true);
-            //server.getGameById(gameID).getPlayerByName(playerName).setAllowedToPlayGame(true);
-            server.getGameById(gameID).setGameActive(true);
-
-            if(server.getGameById(gameID).getPlayers().size()==1){
-                server.getGameById(gameID).stopGameAfterTime(8);
-                server.getGameById(gameID).start();
+            if(!playerName.isEmpty()){
+            if(isPlayerTryToPlayAfterGameStartedPlusOneMinute()){
+                action="Game is already started, started before more than one minute";
+                return action;
             }
+            else if(isPlayerTryToPlayBeforeGameStarted())
+            {
+                action="The Game not started yet, wait few minutes";
+                return action;
+            }
+            else
+            {
+                server.getGameById(gameID).addPlayer(playerName,gameID);
+                //server.getGameById(gameID).addPlayer(playerName,gameID);
+                server.getGameById(gameID).getPlayerByName(playerName).setAllowedToPlayGame(true);
+                //server.getGameById(gameID).getPlayerByName(playerName).setAllowedToPlayGame(true);
+                server.getGameById(gameID).setGameActive(true);
 
-            numberOfPlayerInCurrenRoom=server.getGameById(gameID).getPlayerByName(playerName).getPlayerStatus().getCurrentRoom().getPlayersInRoom().size();
-            numberOfPlayers=server.getGameById(gameID).getPlayers().size();
-            action="";
-            return "game_space.xhtml";
+                if(server.getGameById(gameID).getPlayers().size()==1){
+                    server.getGameById(gameID).stopGameAfterTime(8);
+                    server.getGameById(gameID).start();
+                }
+
+                numberOfPlayerInCurrenRoom=server.getGameById(gameID).getPlayerByName(playerName).getPlayerStatus().getCurrentRoom().getPlayersInRoom().size();
+                numberOfPlayers=server.getGameById(gameID).getPlayers().size();
+                action="";
+                return "game_space.xhtml";
+                }
+            }else
+            {
+                action="Enter player name.";
+                return action;
+            }
+        }else{
+            action="Create game first.";
+            return action;
         }
     }
 
@@ -518,5 +538,28 @@ public class PlayerAction {
         return server.getGameById(gameID).getPlayerByName(playerName).getPlayerStatus().getCurrentRoom().getRoomId();
         }
         return 0;
+    }
+
+    public String removeOneGame()
+    {
+        for(int i=0;i<server.getGames().size();i++)
+        {
+            if(server.getGames().get(i).getGameId()==gameIdToRemove) {
+                server.getGames().remove(i);
+                action="Game Id: "+gameIdToRemove+" removed.";
+                selectedGameForPlayer.clear();
+                break;
+            }else
+                action="Can't remove this game.";
+        }
+        return "setup_game.xhtml";
+    }
+    public String removeGamePage()
+    {
+        if(server.getGames().size()>0)
+        return "clearGame.xhtml";
+        else
+            action="no games to remove.";
+        return "setup_game.xhtml";
     }
 }
