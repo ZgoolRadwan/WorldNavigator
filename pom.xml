@@ -178,7 +178,6 @@
                     <artifactId>maven-war-plugin</artifactId>
                     <version>3.3.1</version>
                     <configuration>
-                        <webResources>web\resources</webResources>
                         <webXml>web\WEB-INF\web.xml</webXml>
                         <webappDirectory>web</webappDirectory>
                     </configuration>
