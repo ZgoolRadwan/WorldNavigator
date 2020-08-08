@@ -8,7 +8,7 @@
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>My project</name>
-    <groupId>WorldNavigatorjjpjppk</groupId>
+    <groupId>WorldNavigatorhhkj</groupId>
     <artifactId>WorldNavigator</artifactId>
     <description>Sample Maven project with a working, deployable site.</description>
     <url>http://www.example.com</url>
@@ -72,53 +72,14 @@
 
     </dependencies>
     <properties>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
     </properties>
 
 
     <build>
-        <plugins>
-
-            <plugin>
-                <artifactId>maven-site-plugin</artifactId>
-                <configuration>
-                    <reportPlugins>
-                        <plugin>
-                            <artifactId>maven-checkstyle-plugin</artifactId>
-                        </plugin>
-
-                        <plugin>
-                            <artifactId>maven-jxr-plugin</artifactId>
-                        </plugin>
-
-                        <plugin>
-                            <artifactId>maven-javadoc-plugin</artifactId>
-                        </plugin>
-
-                        <plugin>
-                            <artifactId>maven-pmd-plugin</artifactId>
-                        </plugin>
-
-                        <plugin>
-                            <artifactId>maven-surefire-report-plugin</artifactId>
-                        </plugin>
-
-                        <plugin>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>findbugs-maven-plugin</artifactId>
-                        </plugin>
-
-                        <plugin>
-                            <groupId>org.codehaus.mojo</groupId>
-                            <artifactId>taglist-maven-plugin</artifactId>
-                        </plugin>
-                    </reportPlugins>
-                </configuration>
-            </plugin>
-        </plugins>
 
         <pluginManagement>
             <plugins>
